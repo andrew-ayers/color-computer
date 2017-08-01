@@ -3,7 +3,7 @@ Truchet Tiles
 
 https://en.wikipedia.org/wiki/Truchet_tiles
 
-I was always kinda intrigued by the one-liner for the Commodore 64
+I was always somewhat intrigued by the one-liner for the Commodore 64
 which could generate a diagonal-style line maze pattern using two
 opposing diagonal line characters in a random Truchet tile manner:
 
