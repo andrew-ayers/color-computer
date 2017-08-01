@@ -1,19 +1,24 @@
-Truchet Tiles - 
+Truchet Tiles
+-------------
 
-see https://en.wikipedia.org/wiki/Truchet_tiles
+see [https://en.wikipedia.org/wiki/Truchet_tiles]
 
 I was always kinda intrigued by the one-liner for the Commodore 64
 which could generate a diagonal-style line maze pattern using two
 opposing diagonal line characters in a random Truchet tile manner:
 
+```
 10 PRINT CHR$(205.5+RND(1));:GOTO 10
+```
 
 I wanted to have this kind of program on the Color Computer, but I
 was pretty certain that it didn't have those characters in its
 character set. But it did have the semi-graphics "diagonal pixel"
 characters - so I tried that:
 
+```
 10 PRINT CHR$(246+(RND(2)-1)*3);:GOTO 10
+```
 
 Ok - so that sorta worked - but with the resolution so low, it doesn't
 really look like a maze of any sorts. If you could keep track of
@@ -23,7 +28,9 @@ might work - but I don't think you could fit it in a one-liner.
 Then I recalled the "forward and backslash" characters (probably should
 have tried those first?):
 
+```
 10 PRINT CHR$(47+(RND(2)-1)*45);:GOTO 10
+```
 
 Still - because of inter-line and inter-character spacing of regular
 characters - it still doesn't look like anything. So, without a greater
@@ -36,6 +43,7 @@ While you can't get an easy scrolling action like the original, you can
 get an 8x8 tile to fill the high resolution (256x192x1) screen, then 
 refresh and start again:
 
+```
 10 PMODE 4:SCREEN 1:PCLS
 20 FOR Y=0 TO 191 STEP 8
 30 FOR X=0 TO 255 STEP 8
@@ -44,6 +52,7 @@ refresh and start again:
 60 NEXT
 70 NEXT
 80 GOTO 10
+```
 
 I think there is a lot of room to explore here. I think it still might be
 possible to do a COLOR BASIC version using the semi-graphics tiles, but
