@@ -1,7 +1,7 @@
 Truchet Tiles
 -------------
 
-see [https://en.wikipedia.org/wiki/Truchet_tiles]
+First check out https://en.wikipedia.org/wiki/Truchet_tiles
 
 I was always kinda intrigued by the one-liner for the Commodore 64
 which could generate a diagonal-style line maze pattern using two
